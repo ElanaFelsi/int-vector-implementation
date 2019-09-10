@@ -12,7 +12,11 @@ typedef enum
     E_BAD_INDEX
 } ErrorCode;
 
-typedef struct Vector Vector;
+typedef struct Vector_ {
+    int data;
+    size_t size;
+    size_t capacity;
+} Vector;
 
 Vector* vectorCreate(size_t size);
 void vectorDestroy(Vector **vector);
@@ -23,7 +27,7 @@ ErrorCode vectorPush(Vector *vector, int value);
 /* Adds an item at a certain position and shifts. Grows if needed (by * 2) */
 ErrorCode vectorInsert(Vector *vector, int value, size_t index);
 
-/* Clears the item at the end. Grows if needed (by * 2) */
+/* Clears the item at the end */
 ErrorCode vectorPop(Vector *vector, int *res);
 
 /* Clears an item at a certain position and shifts. */

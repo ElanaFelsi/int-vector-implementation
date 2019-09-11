@@ -1,10 +1,21 @@
 #include "vector.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 Vector* vectorCreate(size_t size)
 {
-    Vector *vector = malloc(sizeof(int) * size);
+    /*
+    if(size < 0)
+        return E_ALLOCATION_ERROR; */
+    Vector *vector = malloc(sizeof(Vector));
+    vector->data =  malloc(sizeof(int) * size);
+    vector->capacity = size;
     return vector;
+}
+
+void vectorDestroy(Vector **vector)
+{
+    free(*vector);
 }
 
 void vectorCopy(Vector *vecDst, Vector *vecSrc, size_t begin, size_t end)
@@ -132,4 +143,17 @@ size_t vectorCount(const Vector *vector, int value)
         }
     }
     return count;
+}
+
+void vectorPrint(Vector *vector)
+{
+    printf("capacity= %zu\n", vector->capacity );
+    printf("size= %zu\n", vector->size );
+    size_t i=0;
+    printf("data: ");
+    for(;i < vectorGetSize(vector); i++)
+    {
+        printf("%d, ", vector->data[i]);
+    }
+    printf("\n");
 }

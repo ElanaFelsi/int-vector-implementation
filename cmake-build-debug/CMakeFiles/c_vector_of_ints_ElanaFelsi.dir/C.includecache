@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/main.c
+stdio.h
+-
+testing.h
+/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/testing.h
+
+/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/testing.c
+testing.h
+/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/testing.h
+stdio.h
+-
+
+/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/testing.h
+vector.h
+/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/vector.h
+
+/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/vector.h
+stddef.h
+-
+

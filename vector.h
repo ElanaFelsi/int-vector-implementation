@@ -3,6 +3,8 @@
 
 #include <stddef.h>
 
+#define VECTOR_ADD(vec, value) vector_push(&vec, (int) item)
+
 typedef enum
 {
     E_OK,
@@ -46,6 +48,9 @@ size_t vectorGetCapacity(const Vector *vector);
 
 /* Counts how many instances of a given value there are. */
 size_t vectorCount(const Vector *vector, int value);
+
+void vectorPrint(Vector *vector);
+
 
 #ifdef _DEBUG
 void vectorPrint(Vector *vector);

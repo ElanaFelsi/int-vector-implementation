@@ -54,18 +54,62 @@ ErrorCode vectorInsert(Vector *vector, int value, size_t index)
     vectorCopy(vector, v, index+1, v->size);
     return E_OK;
 }
-/*
+
+ErrorCode vectorPop(Vector *vector, int *res)
+{
+    res = &vector->data[vector->size];
+
+    vector->data[vector->size] = (int) NULL;
+
+    vector->size--;
+}
+
+ErrorCode vectorRemove(Vector *vector, size_t index, int *res)
+{
+    if(index >= vector->size)
+    {
+        return E_BAD_INDEX;
+    }
+    res = &vector->data[index];
+
+    vector->data[index] = (int) NULL;
+    size_t i, j;
+    int *holdData = malloc(sizeof(int) * vector->size);
+    for(i = 0, j = 0; i < vector->size; i++)
+    {
+        if(vector->data[i])
+        {
+            holdData[j] = vector->data[i];
+            j++;
+        }
+    }
+    free(vector->data);
+
+    vector->data = holdData;
+    vector->size--;
+
+}
+
 ErrorCode vectorGetElement(const Vector *vector, size_t index, int *res)
 {
-    return vector[index].data;
+    if(index >= vector->size)
+    {
+        return E_BAD_INDEX;
+    }
+    res = &vector->data[index];
+    return E_OK;
 }
 
 ErrorCode vectorSetElement(Vector *vector, size_t index, int value)
 {
-
-    vector[index].data = value;
+    if(index >= vector->size)
+    {
+        return E_BAD_INDEX;
+    }
+    vector->data[index] = value;
+    return E_OK;
 }
-*/
+
 
 size_t vectorGetSize(const Vector *vector)
 {
@@ -81,8 +125,8 @@ size_t vectorCount(const Vector *vector, int value)
 {
     int i=0;
     size_t count=0;
-    for (;i<vector->size;i++) {
-        if(vector[i].data == value)
+    for (;i < vector->size;i++) {
+        if(vector->data[i] == value)
         {
             ++count;
         }

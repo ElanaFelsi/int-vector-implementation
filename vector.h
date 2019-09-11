@@ -21,6 +21,7 @@ typedef struct Vector{
 Vector* vectorCreate(size_t size);
 void vectorDestroy(Vector **vector);
 
+/* copies one vector into the next from a beginning point to end point */
 void vectorCopy(Vector *vecDst, Vector *vecSrc,  size_t begin, size_t end);
 
 void vectorResize(Vector *vector, size_t size);

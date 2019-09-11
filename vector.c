@@ -7,6 +7,15 @@ Vector* vectorCreate(size_t size)
     return vector;
 }
 
+void vectorCopy(Vector *vecDst, Vector *vecSrc, size_t begin, size_t end)
+{
+    while(begin <= end)
+    {
+        vecDst->data[begin+1] = vecSrc->data[begin];
+        ++begin;
+    }
+}
+
 void vectorResize(Vector *vector, size_t size)
 {
     int *data = realloc(vector->data, sizeof(int) * size);
@@ -40,14 +49,9 @@ ErrorCode vectorInsert(Vector *vector, int value, size_t index)
     }
     Vector *v =vectorCreate(vector->capacity);
     size_t i=0;
-    for (; i < index; i++) {
-        v->data[i]=vector->data[i];
-    }
+    vectorCopy(v, vector, index, vector->size);
     vector->data[index] = value;
-    for (; index < vector->size+1; index++)
-    {
-        v->data[index]=vector->data[index];
-    }
+    vectorCopy(vector, v, index+1, v->size);
     return E_OK;
 }
 /*

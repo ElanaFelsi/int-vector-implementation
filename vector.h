@@ -21,6 +21,8 @@ typedef struct Vector{
 Vector* vectorCreate(size_t size);
 void vectorDestroy(Vector **vector);
 
+void vectorCopy(Vector *vecDst, Vector *vecSrc,  size_t begin, size_t end);
+
 void vectorResize(Vector *vector, size_t size);
 
 /* Adds an item at the end. Grows if needed (by * 2) */

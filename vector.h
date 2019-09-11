@@ -12,14 +12,16 @@ typedef enum
     E_BAD_INDEX
 } ErrorCode;
 
-typedef struct Vector_ {
-    int data;
+typedef struct Vector{
+    int *data;
     size_t size;
     size_t capacity;
 } Vector;
 
 Vector* vectorCreate(size_t size);
 void vectorDestroy(Vector **vector);
+
+void vectorResize(Vector *vector, size_t size);
 
 /* Adds an item at the end. Grows if needed (by * 2) */
 ErrorCode vectorPush(Vector *vector, int value);

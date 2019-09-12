@@ -113,19 +113,13 @@ ErrorCode vectorRemove(Vector *vector, size_t index, int *res)
 
     *res = vector->m_data[--index];
 
-    size_t i, j;
-    int *holdData = malloc(sizeof(int) * vector->m_size);
-    for(i = 0, j = 0; i < vector->m_size; i++)
-    {
-        if(vector->m_data[i])
-        {
-            holdData[j] = vector->m_data[i];
-            j++;
-        }
-    }
-    free(vector->m_data);
+    vector->m_data[index] = (int) NULL;
 
-    vector->m_data = holdData;
+    size_t i = index;
+    for (; i < vector->m_size - 1; ++i) {
+        vector->m_data[i] = vector->m_data[i + 1];
+        vector->m_data[i + 1] = (int) NULL;
+    }
     --vector->m_size;
 
     return E_OK;

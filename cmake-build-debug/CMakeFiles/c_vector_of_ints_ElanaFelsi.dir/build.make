@@ -43,10 +43,10 @@ RM = /opt/clion-2019.2/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi
+CMAKE_SOURCE_DIR = /home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug
+CMAKE_BINARY_DIR = /home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/depend.make
@@ -59,42 +59,42 @@ include CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/flags.make
 
 CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/main.c.o: CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/flags.make
 CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/main.c.o   -c /home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/main.c.o   -c /home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/main.c
 
 CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/main.c > CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/main.c > CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/main.c.i
 
 CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/main.c -o CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/main.c -o CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/main.c.s
 
 CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/vector.c.o: CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/flags.make
 CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/vector.c.o: ../vector.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/vector.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/vector.c.o   -c /home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/vector.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/vector.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/vector.c.o   -c /home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/vector.c
 
 CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/vector.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/vector.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/vector.c > CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/vector.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/vector.c > CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/vector.c.i
 
 CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/vector.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/vector.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/vector.c -o CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/vector.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/vector.c -o CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/vector.c.s
 
 CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/testing.c.o: CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/flags.make
 CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/testing.c.o: ../testing.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/testing.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/testing.c.o   -c /home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/testing.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/testing.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/testing.c.o   -c /home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/testing.c
 
 CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/testing.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/testing.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/testing.c > CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/testing.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/testing.c > CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/testing.c.i
 
 CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/testing.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/testing.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/testing.c -o CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/testing.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/testing.c -o CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/testing.c.s
 
 # Object files for target c_vector_of_ints_ElanaFelsi
 c_vector_of_ints_ElanaFelsi_OBJECTS = \
@@ -110,7 +110,7 @@ c_vector_of_ints_ElanaFelsi: CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/vector.c
 c_vector_of_ints_ElanaFelsi: CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/testing.c.o
 c_vector_of_ints_ElanaFelsi: CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/build.make
 c_vector_of_ints_ElanaFelsi: CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable c_vector_of_ints_ElanaFelsi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable c_vector_of_ints_ElanaFelsi"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +123,6 @@ CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/clean:
 .PHONY : CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/clean
 
 CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/depend:
-	cd /home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi /home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi /home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug /home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug /home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi /home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi /home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug /home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug /home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/depend
 

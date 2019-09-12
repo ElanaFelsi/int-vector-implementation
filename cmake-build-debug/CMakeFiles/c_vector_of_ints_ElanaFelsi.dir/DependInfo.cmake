@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/main.c" "/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/main.c.o"
-  "/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/testing.c" "/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/testing.c.o"
-  "/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/vector.c" "/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/vector.c.o"
+  "/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/main.c" "/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/main.c.o"
+  "/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/testing.c" "/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/testing.c.o"
+  "/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/vector.c" "/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/CMakeFiles/c_vector_of_ints_ElanaFelsi.dir/vector.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

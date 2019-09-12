@@ -6,17 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/main.c
+/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/main.c
 stdio.h
 -
 testing.h
-/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/testing.h
+/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/testing.h
 
-/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/testing.h
+/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/testing.c
+testing.h
+/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/testing.h
+stdio.h
+-
+
+/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/testing.h
 vector.h
-/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/vector.h
+/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/vector.h
 
-/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/vector.h
+/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/vector.c
+vector.h
+/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/vector.h
+stdlib.h
+-
+stdio.h
+-
+
+/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/vector.h
 stddef.h
 -
 

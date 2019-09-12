@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug"/>
+				<Option working_dir="/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug"/>
+				<Option working_dir="/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="c_vector_of_ints_ElanaFelsi">
-				<Option output="/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/c_vector_of_ints_ElanaFelsi" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug"/>
+				<Option output="/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/c_vector_of_ints_ElanaFelsi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -41,15 +41,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 c_vector_of_ints_ElanaFelsi"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 c_vector_of_ints_ElanaFelsi"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="c_vector_of_ints_ElanaFelsi/fast">
-				<Option output="/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/c_vector_of_ints_ElanaFelsi" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug"/>
+				<Option output="/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/c_vector_of_ints_ElanaFelsi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -61,39 +61,39 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 c_vector_of_ints_ElanaFelsi/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 c_vector_of_ints_ElanaFelsi/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug"/>
+				<Option working_dir="/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/main.c">
+		<Unit filename="/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/main.c">
 			<Option target="c_vector_of_ints_ElanaFelsi"/>
 		</Unit>
-		<Unit filename="/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/testing.c">
+		<Unit filename="/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/testing.c">
 			<Option target="c_vector_of_ints_ElanaFelsi"/>
 		</Unit>
-		<Unit filename="/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/testing.h">
+		<Unit filename="/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/testing.h">
 			<Option target="c_vector_of_ints_ElanaFelsi"/>
 		</Unit>
-		<Unit filename="/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/vector.c">
+		<Unit filename="/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/vector.c">
 			<Option target="c_vector_of_ints_ElanaFelsi"/>
 		</Unit>
-		<Unit filename="/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/vector.h">
+		<Unit filename="/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/vector.h">
 			<Option target="c_vector_of_ints_ElanaFelsi"/>
 		</Unit>
-		<Unit filename="/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/CMakeLists.txt">
+		<Unit filename="/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

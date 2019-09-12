@@ -114,3 +114,14 @@ void vectorDest()
     vectorDestroy(&vector1);
     vectorDestroy(&vector3);
 }
+
+void test()
+{
+    vectorAlloc();
+    vectorAddElem();
+    vectorInsertElem();
+    vectorPopLast();
+    vectorRemoveAny();
+    vectorCountValue();
+    vectorDest();
+}

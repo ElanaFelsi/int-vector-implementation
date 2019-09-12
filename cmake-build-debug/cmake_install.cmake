@@ -1,4 +1,4 @@
-# Install script for directory: /home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi
+# Install script for directory: /home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/elana/BootCamp-HW/c/c-vector-of-ints-ElanaFelsi/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

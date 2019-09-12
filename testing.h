@@ -11,8 +11,7 @@ void vectorRemoveAny();
 void vectorGetAnElement();
 void vectorSetAnElement();
 void vectorCountValue();
-
-
+void vectorDest();
 
 
 #endif // C_VECTOR_OF_INTS_ELANAFELSI_TESTING_H

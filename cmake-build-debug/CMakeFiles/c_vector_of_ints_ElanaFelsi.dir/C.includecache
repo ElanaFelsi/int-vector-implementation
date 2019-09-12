@@ -6,13 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/vector.c
-vector.h
-/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/vector.h
-stdlib.h
--
+/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/main.c
 stdio.h
 -
+testing.h
+/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/testing.h
+
+/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/testing.h
+vector.h
+/home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/vector.h
 
 /home/elana/BootCamp-HW/c-vector-of-ints-ElanaFelsi/vector.h
 stddef.h

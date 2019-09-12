@@ -7,5 +7,6 @@ int main() {
     vectorPopLast();
     vectorRemoveAny();
     vectorCountValue();
+    vectorDest();
     return 0;
 }

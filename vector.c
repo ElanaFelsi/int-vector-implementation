@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 typedef struct Vector{
-    int *data;
-    size_t size;
-    size_t capacity;
+    int *m_data;
+    size_t m_size;
+    size_t m_capacity;
 } Vector;
 
 
@@ -15,11 +15,11 @@ Vector* vectorCreate(size_t size)
 
     if(vector)
     {
-        vector->capacity = size;
-        vector->size = 0;
-        vector->data =  malloc(sizeof(int) * size);
+        vector->m_capacity = size;
+        vector->m_size = 0;
+        vector->m_data =  malloc(sizeof(int) * size);
 
-        if(!vector->data)
+        if(!vector->m_data)
         {
             free(vector);
             vector = NULL;
@@ -32,130 +32,143 @@ Vector* vectorCreate(size_t size)
 void vectorDestroy(Vector **vector)
 {
     if(vector && *vector) {
-        free((*vector)->data);
+        free((*vector)->m_data);
         free(*vector);
-    }
-}
-
-void vectorCopy(Vector *vecDst, Vector *vecSrc, size_t begin, size_t end)
-{
-    while(begin <= end)
-    {
-        vecDst->data[begin+1] = vecSrc->data[begin];
-        ++begin;
+        *vector = NULL;
     }
 }
 
 void vectorResize(Vector *vector, size_t size)
 {
-    int *data = realloc(vector->data, sizeof(int) * size);
+    int *data = realloc(vector->m_data, sizeof(int) * size);
     if (data)
     {
-        vector->data = data;
-        vector->capacity = size;
+        vector->m_data = data;
+        vector->m_capacity = size;
     }
 }
 
 ErrorCode vectorPush(Vector *vector, int value)
 {
-    if(vector->size == vector->capacity)
+    if(!vector)
     {
-        vectorResize(vector, vector->capacity * 2);
+        return E_NULL_PTR;
     }
-    vector->data[vector->size++] = value;
+
+    if(vector->m_size >= vector->m_capacity)
+    {
+        vectorResize(vector, vector->m_capacity * 2);
+    }
+
+    vector->m_data[vector->m_size++] = value;
+
     return E_OK;
 }
 
 ErrorCode vectorInsert(Vector *vector, int value, size_t index)
 {
-    if(index >= vector->size)
+    if(index >= vector->m_size)
     {
         return E_BAD_INDEX;
     }
-    if(vector->size == vector->capacity)
+
+    if(index == vector->m_size)
     {
-        vectorResize(vector, vector->capacity * 2);
+        return vectorPush(vector, value);
     }
-    Vector *v =vectorCreate(vector->capacity);
-    size_t i=0;
-    vectorCopy(v, vector, index, vector->size);
-    vector->data[index] = value;
-    vectorCopy(vector, v, index+1, v->size);
+
+    if(vector->m_size == vector->m_capacity)
+    {
+        vectorResize(vector, vector->m_capacity * 2);
+    }
+    size_t i = vector->m_size;
+    for (; i > index; --i){
+        vector->m_data[i] = vector->m_data[i-1];
+    }
+    vector->m_data[index] = value;
+    ++vector ->m_size;
     return E_OK;
 }
 
 ErrorCode vectorPop(Vector *vector, int *res)
 {
-    res = &vector->data[vector->size];
+    if(vector->m_size == 0)
+    {
+        return E_NULL_PTR;
+    }
 
-    vector->data[vector->size] = (int) NULL;
+    *res = vector->m_data[--vector->m_size];
 
-    vector->size--;
+    --vector->m_size;
+
+    return E_OK;
 }
 
 ErrorCode vectorRemove(Vector *vector, size_t index, int *res)
 {
-    if(index >= vector->size)
+    if(index >= vector->m_size)
     {
         return E_BAD_INDEX;
     }
-    res = &vector->data[index];
 
-    vector->data[index] = (int) NULL;
+    *res = vector->m_data[--index];
+
     size_t i, j;
-    int *holdData = malloc(sizeof(int) * vector->size);
-    for(i = 0, j = 0; i < vector->size; i++)
+    int *holdData = malloc(sizeof(int) * vector->m_size);
+    for(i = 0, j = 0; i < vector->m_size; i++)
     {
-        if(vector->data[i])
+        if(vector->m_data[i])
         {
-            holdData[j] = vector->data[i];
+            holdData[j] = vector->m_data[i];
             j++;
         }
     }
-    free(vector->data);
+    free(vector->m_data);
 
-    vector->data = holdData;
-    vector->size--;
+    vector->m_data = holdData;
+    --vector->m_size;
+
+    return E_OK;
 
 }
 
 ErrorCode vectorGetElement(const Vector *vector, size_t index, int *res)
 {
-    if(index >= vector->size)
+    if(index >= vector->m_size)
     {
         return E_BAD_INDEX;
     }
-    res = &vector->data[index];
+    *res = vector->m_data[--index];
     return E_OK;
 }
 
 ErrorCode vectorSetElement(Vector *vector, size_t index, int value)
 {
-    if(index >= vector->size)
+    if(index >= vector->m_size)
     {
         return E_BAD_INDEX;
     }
-    vector->data[index] = value;
+    vector->m_data[index] = value;
     return E_OK;
 }
 
 
 size_t vectorGetSize(const Vector *vector)
 {
-    return vector->size;
+    return vector->m_size;
 }
 
 size_t vectorGetCapacity(const Vector *vector)
 {
-    return vector->capacity;
+    return vector->m_capacity;
 }
 
 size_t vectorCount(const Vector *vector, int value)
 {
-    int i=0;
-    size_t count=0;
-    for (;i < vector->size;i++) {
-        if(vector->data[i] == value)
+    size_t i=0, count=0;
+    size_t size = vectorGetSize(vector);
+    for (;i < size;++i) {
+        if(vector->m_data[i] == value)
         {
             ++count;
         }
@@ -165,13 +178,13 @@ size_t vectorCount(const Vector *vector, int value)
 
 void vectorPrint(const Vector *vector)
 {
-    printf("capacity= %zu\n", vector->capacity );
-    printf("size= %zu\n", vector->size );
+    printf("capacity= %zu\n", vector->m_capacity );
+    printf("size= %zu\n", vector->m_size );
     size_t i=0;
     printf("data: ");
     for(;i < vectorGetSize(vector); i++)
     {
-        printf("%d, ", vector->data[i]);
+        printf("%d, ", vector->m_data[i]);
     }
     printf("\n");
 }

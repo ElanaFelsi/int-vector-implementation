@@ -15,6 +15,10 @@ void vectorAlloc()
     vectorPrint(vector4);
     /* vectorPrint(vector5); */
 
+    vectorDestroy(&vector2);
+    vectorDestroy(&vector4);
+
+
 }
 
 void vectorAddElem()
@@ -38,16 +42,19 @@ void vectorAddElem()
 void vectorInsertElem()
 {
     printf(">>>>>>>>>>>>>  INSERT  <<<<<<<<<<<<<\n");
+
     printf("-----Print before insert-----\n");
     vectorPrint(vector1);
     vectorInsert(vector1,5,0);
     printf("-----Print after insert-----\n");
     vectorPrint(vector1);
+
     printf("-----Print before insert-----\n");
     vectorPrint(vector3);
     vectorInsert(vector3,5,6);
     printf("-----Print after insert-----\n");
     vectorPrint(vector3);
+
     printf("-----Print before insert-----\n");
     vectorPrint(vector3);
     vectorInsert(vector3,5,1);
@@ -58,24 +65,37 @@ void vectorInsertElem()
 void vectorPopLast()
 {
     printf(">>>>>>>>>>>>>  POP  <<<<<<<<<<<<<\n");
-    int *res = 0;
+    int info;
+    int *res = &info;
+    printf("-----Print before pop-----\n");
+    vectorPrint(vector1);
+    /* vectorPop(vector1, (int *) &res); why can i only do this way?? */
     vectorPop(vector1, res);
+    printf("-----Print after pop-----\n");
     vectorPrint(vector1);
     /*printf("%d", *res); */
 }
 void vectorRemoveAny()
 {
     printf(">>>>>>>>>>>>>  REMOVE  <<<<<<<<<<<<<\n");
-    int *res = 0;
+    int info;
+    int *res = &info;
+
     vectorRemove(vector1, 1, res);
     vectorPrint(vector1);
+
+    vectorRemove(vector1, 5, res);
+    vectorPrint(vector1);
+
+    vectorRemove(vector1, 0, res);
+    vectorPrint(vector1);
+
 }
 void vectorGetAnElement()
 {
     printf(">>>>>>>>>>>>>  GET ELEMENT  <<<<<<<<<<<<<\n");
     int *res = 0;
     vectorGetElement(vector3, 12, res);
-    /* printf("%d", *res); */
 }
 void vectorSetAnElement()
 {
@@ -85,4 +105,12 @@ void vectorCountValue()
 {
     printf(">>>>>>>>>>>>>  COUNT VALUE  <<<<<<<<<<<<<\n");
     printf("%zu\n",vectorCount(vector3, 3));
+}
+
+void vectorDest()
+{
+    printf(">>>>>>>>>>>>>  Destroy Vectors  <<<<<<<<<<<<<\n");
+
+    vectorDestroy(&vector1);
+    vectorDestroy(&vector3);
 }

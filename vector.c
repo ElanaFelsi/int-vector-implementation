@@ -2,20 +2,39 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+typedef struct Vector{
+    int *data;
+    size_t size;
+    size_t capacity;
+} Vector;
+
+
 Vector* vectorCreate(size_t size)
 {
-    /*
-    if(size < 0)
-        return E_ALLOCATION_ERROR; */
     Vector *vector = malloc(sizeof(Vector));
-    vector->data =  malloc(sizeof(int) * size);
-    vector->capacity = size;
+
+    if(vector)
+    {
+        vector->capacity = size;
+        vector->size = 0;
+        vector->data =  malloc(sizeof(int) * size);
+
+        if(!vector->data)
+        {
+            free(vector);
+            vector = NULL;
+        }
+    }
+
     return vector;
 }
 
 void vectorDestroy(Vector **vector)
 {
-    free(*vector);
+    if(vector && *vector) {
+        free((*vector)->data);
+        free(*vector);
+    }
 }
 
 void vectorCopy(Vector *vecDst, Vector *vecSrc, size_t begin, size_t end)
@@ -43,7 +62,6 @@ ErrorCode vectorPush(Vector *vector, int value)
     {
         vectorResize(vector, vector->capacity * 2);
     }
-    /* Q. why cant I do ++size ? */
     vector->data[vector->size++] = value;
     return E_OK;
 }
@@ -145,7 +163,7 @@ size_t vectorCount(const Vector *vector, int value)
     return count;
 }
 
-void vectorPrint(Vector *vector)
+void vectorPrint(const Vector *vector)
 {
     printf("capacity= %zu\n", vector->capacity );
     printf("size= %zu\n", vector->size );

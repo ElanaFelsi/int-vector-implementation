@@ -15,4 +15,4 @@ void vectorCountValue();
 
 
 
-#endif //C_VECTOR_OF_INTS_ELANAFELSI_TESTING_H
+#endif // C_VECTOR_OF_INTS_ELANAFELSI_TESTING_H

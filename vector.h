@@ -14,11 +14,7 @@ typedef enum
     E_BAD_INDEX
 } ErrorCode;
 
-typedef struct Vector{
-    int *data;
-    size_t size;
-    size_t capacity;
-} Vector;
+typedef struct Vector Vector;
 
 Vector* vectorCreate(size_t size);
 void vectorDestroy(Vector **vector);
@@ -49,12 +45,12 @@ size_t vectorGetCapacity(const Vector *vector);
 /* Counts how many instances of a given value there are. */
 size_t vectorCount(const Vector *vector, int value);
 
-void vectorPrint(Vector *vector);
+void vectorPrint(const Vector *vector);
 
 
 #ifdef _DEBUG
-void vectorPrint(Vector *vector);
+void vectorPrint(const Vector *vector);
 #endif /* _DEBUG */
 
 
-#endif //C_VECTOR_OF_INTS_ELANAFELSI_VECTOR_H
+#endif // C_VECTOR_OF_INTS_ELANAFELSI_VECTOR_H
